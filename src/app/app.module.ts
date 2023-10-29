@@ -7,6 +7,8 @@ import { TestComponent } from './test/test.component';
 import { ViewComponent } from './view/view.component';
 import { NotFoundComponent } from './not-found/not-found.component';
 import { FirstComponent } from './first/first.component';
+import { SecondComponent } from './second/second.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -14,11 +16,13 @@ import { FirstComponent } from './first/first.component';
     TestComponent,
     ViewComponent,
     NotFoundComponent,
-    FirstComponent
+    FirstComponent,
+    SecondComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
