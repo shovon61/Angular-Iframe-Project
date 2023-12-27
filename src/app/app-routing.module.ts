@@ -6,6 +6,7 @@ import { NotFoundComponent } from './not-found/not-found.component';
 import { AppComponent } from './app.component';
 import { FirstComponent } from './first/first.component';
 import { SecondComponent } from './second/second.component';
+import { NewComponent } from './new/new.component';
 
 const routes: Routes = [
       { path:'',component:FirstComponent},
@@ -13,6 +14,7 @@ const routes: Routes = [
       { path:'view',component:ViewComponent},
       { path:'first',component:FirstComponent},
       { path:'second',component:SecondComponent},
+      { path:'new',component:NewComponent },
       { path:'**',component:NotFoundComponent}
     
 ];
